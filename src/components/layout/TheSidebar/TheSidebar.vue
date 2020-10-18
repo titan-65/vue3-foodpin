@@ -5,19 +5,19 @@
         <form @submit.prevent="submitRecipe">
           <div class="form-control">
             <label for="title">Title</label>
-            <input id="title" name="title" ref="title" type="text">
+            <input id="title" v-model="title" name="title" ref="title" type="text">
           </div>
           <div class="form-control">
             <label for="preview">Preview</label>
-            <input id="preview" name="preview" ref="preview" type="text">
+            <input id="preview" v-model="preview" name="preview" ref="preview" type="text">
           </div>
           <div class="form-group mt-2">
             <label class="form-control-label bmd-label-floating" for="description">Description</label>
-            <textarea class="form-control" id="description" ref="description" name="description" rows="5"/>
+            <textarea class="form-control" v-model="description" id="description" ref="description" name="description" rows="5"/>
           </div>
           <div class="form-control mt-5">
             <label for="image">Image</label>
-            <input id="image" name="image" ref="image" type="url">
+            <input id="image" name="image" v-model="image" ref="image" type="url">
           </div>
           <div>
             <button class="btn btn-primary" type="submit">Submit</button>
@@ -63,6 +63,10 @@
             }
 
             this.addRecipe(enteredTitle, enteredPreview, enteredDescription, enteredImage)
+            this.title = '';
+            this.preview = '';
+            this.description = '';
+            this.image = '';
           },
         closeModal() {
             this.inputInvalid = false;
