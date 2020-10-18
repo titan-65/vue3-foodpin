@@ -1,4 +1,7 @@
 # vue3-foodpin
+# Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4a2785b5-5dce-46b6-a4e4-c82f5a0697b2/deploy-status)](https://app.netlify.com/sites/elastic-noether-ba1486/deploys)
+
 ![Vue3](images/vue3-foodpin.png)
 
 ## Basic Features 
