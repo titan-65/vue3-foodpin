@@ -1,6 +1,12 @@
 <template>
   <Nav/>
-  <TheHeader/>
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl font-bold leading-tight text-gray-900">
+        Dashboard
+      </h1>
+    </div>
+  </header>
   <div class="row">
   <TheSidebar/>
   <Main>
@@ -24,11 +30,9 @@ import Main from "@/components/layout/Main/Main";
 import AddRecipeListButton from "@/components/AddRecipeListButton";
 import RecipesList from "@/components/RecipesList/RecipesList";
 import TheSidebar from "@/components/layout/TheSidebar/TheSidebar";
-import TheHeader from "@/components/layout/TheHeader.vue";
 export default {
   name: 'App',
   components: {
-    TheHeader,
     TheSidebar,
     RecipesList,
     AddRecipeListButton,
